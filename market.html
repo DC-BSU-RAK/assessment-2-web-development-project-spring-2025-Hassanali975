@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PUBG Gallery</title>
+  <style>
+    /* Reset & Base Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #1a1a1a;
+      padding: 1em 0;
+      text-align: center;
+      border-bottom: 2px solid #f9c00c;
+    }
+
+    header h1 {
+      color: #f9c00c;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f9c00c;
+    }
+
+    /* Gallery Section */
+    .gallery-container {
+      padding: 2em;
+    }
+
+    .gallery-container h2 {
+      color: #f9c00c;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5em;
+    }
+
+    .gallery-item {
+      background-color: #1f1f1f;
+      border: 2px solid #2c2c2c;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #f9c00c;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .caption {
+      padding: 0.75em;
+      text-align: center;
+      color: #ccc;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+      border-top: 2px solid #f9c00c;
+    }
+
+    footer p {
+      color: #999;
+      font-size: 0.9em;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PUBG Gaming Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="gallery-container">
+    <h2>In-Game Marketplace Crates</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/marketplace 4.jpeg" alt="PUBG Marketplace Crates 1">
+        <div class="caption">PUBG Marketplace Crates - Variety of in-game items</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/marketplace 3.jpeg" alt="PUBG Supply Stations">
+        <div class="caption">PUBG Supply Stations - Levels II and III</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PUBG Gaming Hub</p>
+  </footer>
+</body>
+</html>

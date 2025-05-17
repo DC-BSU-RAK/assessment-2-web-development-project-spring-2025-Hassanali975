@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Screenshot Gallery</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2f;
+      color: #f1f1f1;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #00bcd4;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #aaa;
+    }
+
+    /* Gallery layout */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .image-card {
+      background: #2e2e40;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 400px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .image-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .image-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-card p {
+      padding: 15px;
+      font-size: 1em;
+      color: #ccc;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Game Screenshot Gallery</h1>
+    <p>Featuring intense action from a battle royale experience</p>
+  </header>
+
+  <main class="gallery">
+    <div class="image-card">
+      <img src="gallery 1.jpeg" alt="Group of players with jeep" />
+      <p>Team ready for battle</p>
+    </div>
+    <div class="image-card">
+      <img src="gsllery 2.jpeg" alt="Players in combat near house" />
+      <p>Combat near the safe zone</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GameShots Inc.</p>
+  </footer>
+</body>
+</html>

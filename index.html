@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PUBG Fan Site</title>
+  <meta name="description" content="PUBG fan site with guides, weapons, maps, and community updates.">
+
+  <!-- Embedded CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #111;
+      color: #f5f5f5;
+    }
+
+    a {
+      color: #f5f5f5;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #facc15;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px 40px;
+      border-bottom: 2px solid #facc15;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #facc15;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav li {
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(145deg, #222, #000);
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      color: #facc15;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      font-size: 1.1rem;
+    }
+
+    .hero video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 2px solid #facc15;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>PUBG: Battlegrounds</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="weapons.html">Weapons</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Drop In. Gear Up. Survive.</h2>
+      <p>Welcome to the battlegrounds! Explore the game, master strategies, and connect with the PUBG community.</p>
+      <video controls autoplay muted>
+        <source src="pubg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PUBG Fan Website. Made by Hassan.</p>
+  </footer>
+
+  <!-- Embedded JavaScript -->
+  <script>
+    console.log("%cWelcome to the PUBG Fan Site", "color: #facc15; font-size: 16px; font-weight: bold;");
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const currentPage = location.pathname.split("/").pop();
+      const navLinks = document.querySelectorAll("nav a");
+
+      navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+          link.style.color = "#facc15";
+          link.style.textDecoration = "underline";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

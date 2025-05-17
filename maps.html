@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PUBG Maps</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #ffcc00;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: #ffcc00;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .map-section {
+      margin-bottom: 40px;
+    }
+
+    .map-section img {
+      max-width: 90%;
+      border: 3px solid #ffcc00;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+      margin-top: 10px;
+    }
+
+    .map-section h2 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    .map-section p {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 20px;
+      border-top: 2px solid #ffcc00;
+      margin-top: 40px;
+    }
+
+    button {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #e6b800;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PUBG Maps</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="weapons.html">Weapons</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="map-section">
+      <h2>Vikendi (Snow Map)</h2>
+      <img src="map 1.jpeg" alt="Vikendi Snow Map">
+      <p>Vikendi is a snow-covered map that features a mix of open fields and tight urban areas. Ideal for mid-range combat and stealth play.</p>
+    </section>
+
+    <section class="map-section">
+      <h2>Sanhok (Jungle Map)</h2>
+      <img src="map 2.jpeg" alt="Sanhok Jungle Map">
+      <p>Sanhok is a dense, tropical island map known for fast-paced action, close-quarters combat, and vibrant visuals.</p>
+    </section>
+
+    <section class="map-section">
+      <h2>Erangel (Original Map)</h2>
+      <img src="map 3.jpeg" alt="Erangel Classic Map">
+      <p>Erangel is the first map of PUBG and features a balanced mix of rural towns, military bases, and open landscapes. Perfect for classic battle royale strategies.</p>
+    </section>
+
+    <button onclick="showAlert()">Explore Tips</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PUBG Fan Website. Made by Hassan.</p>
+  </footer>
+
+  <script>
+    function showAlert() {
+      alert("Tip: Learn each map’s hotspots and terrain for better positioning!");
+    }
+  </script>
+
+</body>
+</html>
